@@ -1,5 +1,6 @@
 import os
-from functions import *
+from functions import agregar_contacto, listar_contactos, buscar_contacto, eliminar_contacto, salir_menu
+
 os.system("cls")
 contactos = []
 while True:
@@ -19,6 +20,7 @@ while True:
         elif opcion == 2:
             os.system("cls")
             print("Lista de contactos")
+            listar_contactos(contactos)
             os.system("Pause")
         elif opcion == 3:
             os.system("cls")
@@ -28,6 +30,7 @@ while True:
         elif opcion == 4:
             os.system("cls")
             print("Eliminar contacto")
+            eliminar_contacto(contactos)
             os.system("Pause")
         elif opcion == 5:
             os.system("cls")
