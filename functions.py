@@ -13,3 +13,4 @@ def buscar_contacto(contactos):
 
 def salir_menu(): 
     print("Saliendo del menú.... ¡Hasta pronto!")
+
